@@ -1,0 +1,84 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Wood Working   
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20110708
+
+-->
+<?php
+$this->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
+$this->headTitle()->setSeparator(' - ');
+$this->headTitle('Voyage Espoire');
+
+echo $this->doctype();
+?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+    <head>
+        <?php echo $this->headMeta(); ?>
+        <?php echo $this->headTitle(); ?>
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="wrapper-bgbtm">
+                <div id="header">
+                    <div id="logo">
+                        <h1><a href="#">Voyage d'espoire</a></h1>
+                        <br/>
+                        <p>template design by <a href="http://www.freecsstemplates.org/">FCT</a></p>
+                    </div>
+                </div>
+                <!-- end #header -->
+                <div id="menu">
+                    <?= $this->partial('menu.phtml') ?>
+                </div>
+                <!-- end #menu -->
+                <div id="page">
+                    <div id="page-bgtop">
+                        <div id="page-bgbtm">
+                            <div id="content">
+                                <div class="post">
+                                    <h1><?php echo $this->escape($this->title); ?></h1>
+                                    <?php echo $this->layout()->content; ?>
+                                </div>
+                            </div>
+                            <!-- end #content -->
+                            <div id="sidebar">
+                                <div id="search">
+                                    <h2>Search</h2>
+                                    <form method="get" action="">
+                                        <fieldset>
+                                            <input type="text" name="s" id="search-text" size="15" value="enter keywords here..." />
+                                            <input type="submit" id="search-submit" value="GO" />
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <h2>Aliquam tempus</h2>
+                                        <p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end #sidebar -->
+                            <div style="clear: both;">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end #page -->
+                <div id="footer">
+                    <p>Copyright (c) 2011 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/">FCT</a>.</p>
+                </div>
+                <!-- end #footer -->
+            </div>
+        </div>
+    </body>
+</html>
